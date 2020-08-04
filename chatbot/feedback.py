@@ -9,5 +9,5 @@ firebase = firebaseHelper()
 def confirm_feedback(request, responder):
     id = request.params.dynamic_resource['id']
     firebase.setFeedback(id, responder.frame["message"])
-    responder.reply("Thank you for your feedback🙂~")
+    responder.reply("Thank you for your feedback🙂")
 
